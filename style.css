@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  backdrop-filter: blur(10px);
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.539);
+  padding: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.top-wind {
+  margin-top: 50px;
+  position: sticky;
+  inset: 0;
+  height: 120px;
+}
+
+
+ul {
+  margin-top: 40px;
+  position: absolute;
+}
+
+li {
+    float: left ;
+    list-style-type: none
+
+}
+
+li a {
+    color: red;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.logo{
+  
+
+}
+
+#first{
+  margin-left: 150px;
+}
+
+.imgLogobutton {
+  background-image: url("images/new_logo.png");
+  background-size: contain; /* Ajuste l'image à la taille du bouton */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-color: transparent;
+  width: 20%; /* Ajustez selon vos besoins */
+  height: 100px; /* Ajustez selon vos besoins */
+  border: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: tan;
+}
+
+.box-center {
+  display: flex;
+  justify-content: center;
+  margin-left: 22%;
+  margin-right: 22%;
+  position: relative; /* Pour positionner l'image à l'intérieur */
+  overflow: hidden; /* Empêche l'image de sortir de la zone */
+}
+
+#floatingImage {
+  top: -10px;
+  position: relative;
+  width: 90%; /* Ajustez selon vos besoins */
+  height: auto; /* Ajustez selon vos besoins */
+  animation: moveUpDown 11s ease-in-out infinite; /* Animation verticale */
+}
+
+/* Animation pour déplacer l'image de haut en bas */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Position de départ (haut) */
+  }
+  30% {
+    transform: translateY(2vh); /* Position au sommet */
+  }
+  50% {
+    transform: translateY(1vh); /* Position au bas */
+  }
+  70% {
+    transform: translateY(2vh); /* Position au sommet */
+  }
+  100% {
+    transform: translateY(0); /* Retour au haut */
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  border-bottom: #000000 solid 2px;
+  border-top: #000000 solid 2px;
+  margin-top: 50px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  margin: 50px 3%;
+  width: 80%;
+  height: auto;
+  gap: 20px;
+  border-radius: 10px;
+  border: #000000 solid 2px;
+}
+
+.Line {
+  width: 2px; /* Largeur du trait */
+  background-color: #000; /* Couleur du trait */
+  margin: 0 20px; /* Espacement entre les éléments et la ligne */
+  height: max-content; /* La ligne prend toute la hauteur disponible dans .box */
+}
+
+.box p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.box img {
+  width: 150px;
+  height: auto;
+  object-fit: contain; /* Maintient les proportions de l'image sans la déformer */
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #000000; /* Exemple de couleur pour le texte, remplacez-le par la couleur de votre choix */
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif; /* Spécifiez votre police */
+  font-size: 18px; /* Taille de la police */
+  padding: 20px;
+  border-radius: 10px; /* Remplacez $border-radius par la valeur de votre choix */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Effect when hovering */
+.effect.effect-4 {
+  min-width: 200px;
+  height: 80px;
+  font-size: 1.2em; /* Adjust the multiplier as needed to maintain the proportion */
+  transition: all 1s ease-in-out; /* Transition fluide pour l'ensemble de l'élément */
+}
+
+.effect.effect-4:before {
+  content: "\f019"; /* Icône FontAwesome */
+  font-family: "Font Awesome 5 Free", "FontAwesome"; /* Spécifiez correctement le font-family FontAwesome */
+  font-weight: 900; /* Important pour les icônes de FontAwesome */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  transform: scale(0); /* Initial scale */
+  opacity: 0; /* Cache l'icône initialement */
+  transition-delay: 0.5s; /* L'icône apparaît immédiatement au survol */
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Ajoute une transition pour l'opacité */
+}
+
+.effect.effect-4:hover {
+  text-indent: -300%; /* Cache le texte lors du survol */
+  transition: background-color 1s ease-in-out; /* Animate background color */
+}
+
+.effect.effect-4:hover:before {
+  transform: scale(1); /* Scale l'icône */
+  opacity: 1; /* Rends l'icône visible */
+  transition-delay: 0.2s; /* L'icône apparaît immédiatement au survol */
+}
+
+.effect.effect-4:before {
+  text-indent: 0; /* S'assure que le texte est bien visible en dehors du hover */
+}
+
+.footer-content {
+  border-top: #000000 solid 1px;
+  background-color: rgba(255, 255, 255, 0.718);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+/* Affect all <a> elements within the footer */
+footer a {
+  text-decoration: none; /* Removes underline */
+  color: blue; /* Sets text color */
+  font-size: 15px; /* Changes font size */
+}
+
+/* Add hover effect for all <a> elements within the footer */
+footer a:hover {
+  color: rgba(255, 0, 0, 0.603); /* Changes color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+
+
+.link {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #af8316;
+  cursor: pointer;
+  border: 1px solid #af8316;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #af8316, -6px -6px 12px #cd9e2c;
+}
+
+.link:hover {
+  color: #000;
+  box-shadow: 4px 4px 12px #c7a658, -4px -4px 12px #684f13;
+}
+
+
+
+.act{
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #af8316;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #000;
+  box-shadow: inset 4px 4px 12px #9e7f35, inset -4px -4px 12px #684f13;
+}
+
+.act:hover {
+  color: #000;
+  box-shadow: inset -4px -4px 12px #c7a658, inset 4px 4px 12px #684f13;
+}
+
+
+
+.immu{
+  height : 100px;
+  width: 100px;
+}
+
+.rotate{
+  height: 50px;
+  width: 50px;
+}
