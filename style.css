@@ -10,79 +10,91 @@ h1 {
 
 header {
   backdrop-filter: blur(10px);
-  padding-top: 40px;
+  padding-top: 10%;
   background-color: rgba(0, 0, 0, 0.539);
-  padding: 8px;
+  padding: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 10;
+  display: block;
+
+}
+
+.main-bar{
+  position: absolute;
+  float: left;
+  width: 10%;
+}
+.main2 {
+
+  height: 120px;
+  width : 80%;
+  overflow: auto;
+  white-space: none;
+  scrollbar-width: 10%;
+  margin-left: 20%; 
 }
 
 .top-wind {
-  margin-top: 50px;
+  top: 0;
+  margin-top: 4%;
   position: sticky;
-  inset: 0;
   height: 120px;
+  width : 100%;
+  white-space: nowrap;
+
+
 }
+
+
 
 
 ul {
-  margin-top: 40px;
-  position: absolute;
+  margin-top: 3%;
+  position: center;
+  display: flex;
+  gap: 3%;
+
 }
 
 li {
-    float: left ;
-    list-style-type: none
-
+    list-style-type: none;
+    position: relative;
 }
 
 li a {
     color: red;
-    text-align: center;
-    padding: 30px 30px;
     text-decoration: none;
-    margin-right: 30px;
-}
-
-.logo{
-  
+    justify-content: space-between;
 
 }
 
-#first{
-  margin-left: 150px;
-}
 
-.imgLogobutton {
-  background-image: url("images/new_logo.png");
-  background-size: contain; /* Ajuste l'image à la taille du bouton */
-  background-repeat: no-repeat; /* Évite la répétition de l'image */
-  background-color: transparent;
-  width: 20%; /* Ajustez selon vos besoins */
-  height: 100px; /* Ajustez selon vos besoins */
-  border: none;
-}
+
+
 
 body {
   font-family: Arial, sans-serif;
   background-color: tan;
+  padding-top: 10px;
 }
 
+
 .box-center {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-left: 22%;
   margin-right: 22%;
-  position: relative; /* Pour positionner l'image à l'intérieur */
   overflow: hidden; /* Empêche l'image de sortir de la zone */
 }
 
 #floatingImage {
-  top: -10px;
   position: relative;
-  width: 90%; /* Ajustez selon vos besoins */
+  width: 40%; /* Ajustez selon vos besoins */
   height: auto; /* Ajustez selon vos besoins */
   animation: moveUpDown 11s ease-in-out infinite; /* Animation verticale */
+  z-index: 9;
 }
 
 /* Animation pour déplacer l'image de haut en bas */
@@ -110,19 +122,23 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  padding: 20px;
+  padding: 1%;
   border-bottom: #000000 solid 2px;
   border-top: #000000 solid 2px;
-  margin-top: 50px;
+  margin-top: 4%;
 }
+
+
+
+
 
 .box {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   background-color: white;
-  padding: 20px;
-  margin: 50px 3%;
+  padding: 1%;
+  margin: 1% 3%;
   width: 80%;
   height: auto;
   gap: 20px;
@@ -133,7 +149,7 @@ body {
 .Line {
   width: 2px; /* Largeur du trait */
   background-color: #000; /* Couleur du trait */
-  margin: 0 20px; /* Espacement entre les éléments et la ligne */
+  margin: 0 1%; /* Espacement entre les éléments et la ligne */
   height: max-content; /* La ligne prend toute la hauteur disponible dans .box */
 }
 
@@ -143,7 +159,7 @@ body {
 }
 
 .box img {
-  width: 150px;
+  width: 12%;
   height: auto;
   object-fit: contain; /* Maintient les proportions de l'image sans la déformer */
 }
@@ -157,17 +173,24 @@ body {
   text-transform: capitalize;
   font-family: "Roboto", sans-serif; /* Spécifiez votre police */
   font-size: 18px; /* Taille de la police */
-  padding: 20px;
+  padding: 1%;
   border-radius: 10px; /* Remplacez $border-radius par la valeur de votre choix */
   overflow: hidden;
   cursor: pointer;
 }
 
+
+.button-effect{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+}
+
 /* Effect when hovering */
 .effect.effect-4 {
-  min-width: 200px;
-  height: 80px;
-  font-size: 1.2em; /* Adjust the multiplier as needed to maintain the proportion */
+  width: 10rem;
+  height: 100%;
   transition: all 1s ease-in-out; /* Transition fluide pour l'ensemble de l'élément */
 }
 
@@ -243,6 +266,7 @@ footer a:hover {
   border: 1px solid #af8316;
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #af8316, -6px -6px 12px #cd9e2c;
+  height: 50px;
 }
 
 .link:hover {
@@ -270,12 +294,121 @@ footer a:hover {
 
 
 
-.immu{
-  height : 100px;
-  width: 100px;
+
+
+
+
+ keeps things centered and on screen during scroll */
+.sticky-container {
+  position: fixed;
+  inset: 0;
+}
+
+/* stacked and centered container to revolve within */
+.orbit-sun {
+  display: grid;
+  margin: left;  
+  > * {
+    grid-area: 1/1;
+  }
+}
+
+.orbit-earth {
+  display: grid;
+  margin: left;  
+  > * {
+    grid-area: 1/1;
+  }
+}
+
+.
+
+
+/* SUN */
+@keyframes sun-spin {
+  to {
+    rotate: .25turn;
+  }  
+}
+
+
+
+
+@keyframes earth-spin {
+  to {
+    rotate: 3turn;
+  }  
+}
+
+
+.burg {
+  float: top;
+  position: absolute;
+  top: 27%;
+  left: 80%;
+  animation: earth-spin linear both;
+  animation-timeline: scroll();
+  width: 30%;
+  height: 30%;
+  
+  > * {
+    translate: 200% 0;
+  }
 }
 
 .rotate{
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
 }
+
+
+
+
+.immu{
+  top: 0px;
+  height : 70%;
+  width: 70%;
+  margin-left: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@layer support {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+
+  body {
+    min-block-size: 300%;
+    font-family: system-ui, sans-serif;
+  }
+  
+  [data-icon] {
+    --_icon:;
+    mask: var(--_icon) center / contain no-repeat;
+
+    aspect-ratio: 1;
+  }
+}
+
+
+
+
