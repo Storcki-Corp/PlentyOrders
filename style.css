@@ -2,12 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 h1 {
   text-align: center;
 }
 
+
+/* Pour les Daltoniens */
+#page_c {
+  filter: grayscale(100%);
+}
+
+.personnel {
+  height: 7%;
+  width: 7%;
+  border-radius: 5px;
+}
+
+
+/* Avoir un barre qui reste en haut de page et un arrière plan flou*/
 header {
   backdrop-filter: blur(10px);
   padding-top: 10%;
@@ -16,7 +31,21 @@ header {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 10;
   display: block;
+}
 
+  body {
+    min-block-size: 300%;
+    font-family: system-ui, sans-serif;
+  }
+
+/* Avoir un barre qui reste en haut de page et un arrière plan flou*/
+.top-wind {
+  top: 0;
+  margin-top: 4%;
+  position: sticky;
+  height: 120px;
+  width : 100%;
+  white-space: nowrap;
 }
 
 .main-bar{
@@ -24,8 +53,9 @@ header {
   float: left;
   width: 10%;
 }
-.main2 {
 
+/* La barre peut etre plus large que la page sans l'élargir, utile pour le responsive */
+.main2 {
   height: 120px;
   width : 80%;
   overflow: auto;
@@ -34,25 +64,13 @@ header {
   margin-left: 20%; 
 }
 
-.top-wind {
-  top: 0;
-  margin-top: 4%;
-  position: sticky;
-  height: 120px;
-  width : 100%;
-  white-space: nowrap;
-
-
-}
-
-
-
 
 ul {
   margin-top: 3%;
+  margin-left: 1.5%;
   position: center;
   display: flex;
-  gap: 3%;
+  gap: 2%;
 
 }
 
@@ -69,6 +87,47 @@ li a {
 }
 
 
+/* Effet de lumière sur les bouttons pour changer de page */
+.link {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #af8316;
+  cursor: pointer;
+  border: 1px solid #af8316;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #af8316, -6px -6px 12px #cd9e2c;
+  height: 50px;
+  margin-left : 2%;
+}
+
+
+.link:hover {
+  color: #000;
+  box-shadow: 4px 4px 12px #c7a658, -4px -4px 12px #684f13;
+}
+
+
+/* Effet de lumière sur le boutton de la page actuelle */
+.act{
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #af8316;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #000;
+  box-shadow: inset 4px 4px 12px #9e7f35, inset -4px -4px 12px #684f13;
+  margin-left : 2%;
+
+}
+
+.act:hover {
+  color: #000;
+  box-shadow: inset -4px -4px 12px #c7a658, inset 4px 4px 12px #684f13;
+}
+
 
 
 
@@ -79,6 +138,7 @@ body {
 }
 
 
+/* Contient l'image au centre de la page download */
 .box-center {
   height: 100%;
   width: 100%;
@@ -86,14 +146,14 @@ body {
   justify-content: center;
   margin-left: 22%;
   margin-right: 22%;
-  overflow: hidden; /* Empêche l'image de sortir de la zone */
+  overflow: hidden; 
 }
 
 #floatingImage {
   position: relative;
-  width: 40%; /* Ajustez selon vos besoins */
-  height: auto; /* Ajustez selon vos besoins */
-  animation: moveUpDown 11s ease-in-out infinite; /* Animation verticale */
+  width: 40%; 
+  height: auto; 
+  animation: moveUpDown 11s ease-in-out infinite; 
   z-index: 9;
 }
 
@@ -116,6 +176,7 @@ body {
   }
 }
 
+/* Agit comme une boîte, délimitée par les traits noir horizontaux */
 .container {
   display: flex;
   justify-content: center;
@@ -129,9 +190,19 @@ body {
 }
 
 
+#home-txt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 1%;
+  border-bottom: #000000 solid 2px;
+  border-top: #000000 solid 2px;
+  margin-top: 4%;
+}
 
 
-
+/* Centre les textes concernant notre entreprise*/
 .box {
   display: flex;
   justify-content: space-around;
@@ -146,12 +217,7 @@ body {
   border: #000000 solid 2px;
 }
 
-.Line {
-  width: 2px; /* Largeur du trait */
-  background-color: #000; /* Couleur du trait */
-  margin: 0 1%; /* Espacement entre les éléments et la ligne */
-  height: max-content; /* La ligne prend toute la hauteur disponible dans .box */
-}
+
 
 .box p {
   font-size: 1em;
@@ -161,25 +227,26 @@ body {
 .box img {
   width: 12%;
   height: auto;
-  object-fit: contain; /* Maintient les proportions de l'image sans la déformer */
+  object-fit: contain; 
 }
 
+/* Animation du boutton télécharger */
 .effect {
   text-align: center;
   display: inline-block;
   position: relative;
   text-decoration: none;
-  color: #000000; /* Exemple de couleur pour le texte, remplacez-le par la couleur de votre choix */
+  color: #000000; 
   text-transform: capitalize;
-  font-family: "Roboto", sans-serif; /* Spécifiez votre police */
-  font-size: 18px; /* Taille de la police */
+  font-family: "Roboto", sans-serif; 
+  font-size: 18px; 
   padding: 1%;
-  border-radius: 10px; /* Remplacez $border-radius par la valeur de votre choix */
+  border-radius: 10px; 
   overflow: hidden;
   cursor: pointer;
 }
 
-
+/* Boutton télécharger */
 .button-effect{
   height: 100%;
   width: 100%;
@@ -187,17 +254,18 @@ body {
   z-index: 4;
 }
 
-/* Effect when hovering */
+/* Animation du boutton télécharger après passage de la souris */
 .effect.effect-4 {
   width: 10rem;
   height: 100%;
-  transition: all 1s ease-in-out; /* Transition fluide pour l'ensemble de l'élément */
+  transition: all 1s ease-in-out; 
 }
 
+/* Animation de l'icon du boutton télécharger */
 .effect.effect-4:before {
-  content: "\f019"; /* Icône FontAwesome */
-  font-family: "Font Awesome 5 Free", "FontAwesome"; /* Spécifiez correctement le font-family FontAwesome */
-  font-weight: 900; /* Important pour les icônes de FontAwesome */
+  content: "\f019"; 
+  font-family: "Font Awesome 5 Free", "FontAwesome"; 
+  font-weight: 900; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,25 +276,28 @@ body {
   height: 100%;
   text-align: center;
   font-size: 30px;
-  transform: scale(0); /* Initial scale */
-  opacity: 0; /* Cache l'icône initialement */
-  transition-delay: 0.5s; /* L'icône apparaît immédiatement au survol */
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Ajoute une transition pour l'opacité */
+  transform: scale(0); 
+  opacity: 0; 
+  transition-delay: 0.5s; 
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
 
+/* Animation du texte du boutton télécharger */
 .effect.effect-4:hover {
-  text-indent: -300%; /* Cache le texte lors du survol */
-  transition: background-color 1s ease-in-out; /* Animate background color */
+  text-indent: -300%; 
+  transition: background-color 1s ease-in-out; 
 }
 
+/* Affiche l'icon du bouton télécharger */
 .effect.effect-4:hover:before {
-  transform: scale(1); /* Scale l'icône */
-  opacity: 1; /* Rends l'icône visible */
-  transition-delay: 0.2s; /* L'icône apparaît immédiatement au survol */
+  transform: scale(1); 
+  opacity: 1; 
+  transition-delay: 0.2s; 
 }
 
+/* Centre l'icon du boutton télécharger */
 .effect.effect-4:before {
-  text-indent: 0; /* S'assure que le texte est bien visible en dehors du hover */
+  text-indent: 0; 
 }
 
 .footer-content {
@@ -240,119 +311,83 @@ body {
   padding: 15px;
 }
 
-/* Affect all <a> elements within the footer */
+/* Zone de bas de page pour le copy-right */
 footer a {
-  text-decoration: none; /* Removes underline */
-  color: blue; /* Sets text color */
-  font-size: 15px; /* Changes font size */
+  text-decoration: none;
+  color: blue;
+  font-size: 15px;
 }
 
-/* Add hover effect for all <a> elements within the footer */
+
 footer a:hover {
-  color: rgba(255, 0, 0, 0.603); /* Changes color on hover */
-  text-decoration: underline; /* Adds underline on hover */
-  cursor: pointer; /* Changes cursor to pointer */
-}
-
-
-
-.link {
-  color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #af8316;
+  color: rgba(255, 0, 0, 0.603);
+  text-decoration: underline;
   cursor: pointer;
-  border: 1px solid #af8316;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #af8316, -6px -6px 12px #cd9e2c;
-  height: 50px;
-}
-
-.link:hover {
-  color: #000;
-  box-shadow: 4px 4px 12px #c7a658, -4px -4px 12px #684f13;
 }
 
 
+/* contient le role de chacun */
+.box-workers {
+  text-align: center;
+  background-color: dimgray;
+  padding: 1%;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  border-radius: 10px;
+  border: #000000 solid 1px;
 
-.act{
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #af8316;
-  cursor: pointer;
-  transition: all 0.3s;
-  color: #000;
-  box-shadow: inset 4px 4px 12px #9e7f35, inset -4px -4px 12px #684f13;
-}
-
-.act:hover {
-  color: #000;
-  box-shadow: inset -4px -4px 12px #c7a658, inset 4px 4px 12px #684f13;
 }
 
 
 
+.box-workers2 {
+  display: flex;
+  background-color: dimgray;
+  padding: 1%;
+  width: 100%;
+  height: auto;
+
+  justify-content: center;
 
 
+}
 
 
- keeps things centered and on screen during scroll */
+.box-workers p {
+  margin-top: 3%;
+  margin-right: 1%;
+}
+
+
+/* permet que les images restent en haut de l'écran */
 .sticky-container {
   position: fixed;
   inset: 0;
 }
 
-/* stacked and centered container to revolve within */
-.orbit-sun {
-  display: grid;
-  margin: left;  
-  > * {
-    grid-area: 1/1;
-  }
-}
 
-.orbit-earth {
-  display: grid;
-  margin: left;  
-  > * {
-    grid-area: 1/1;
-  }
-}
-
-.
-
-
-/* SUN */
-@keyframes sun-spin {
-  to {
-    rotate: .25turn;
-  }  
-}
-
-
-
-
-@keyframes earth-spin {
+/* fait tourner sur place la div qui contient l'image du burger */
+@keyframes burger-spin {
   to {
     rotate: 3turn;
   }  
 }
 
 
+/* détail sur l'image et l'animation du burger qui tourne */
 .burg {
   float: top;
   position: absolute;
   top: 27%;
   left: 80%;
-  animation: earth-spin linear both;
-  animation-timeline: scroll();
+  animation: burger-spin linear both; /* utilise les keyframes du burger pour le faire tourner */
+  animation-timeline: scroll(); /* effectue l'animation quand on baisse/monte la page */
   width: 30%;
   height: 30%;
   
-  > * {
-    translate: 200% 0;
+  > * { /* affecte les enfant de la class burg */
+    translate: 200%; /* correspond à la position du burger dans la div .burg */
   }
 }
 
@@ -361,9 +396,7 @@ footer a:hover {
   width: 100%;
 }
 
-
-
-
+/* propriétés du logo immuable */
 .immu{
   top: 0px;
   height : 70%;
@@ -373,41 +406,7 @@ footer a:hover {
   justify-content: center;
 }
 
-.logo{
-  display: flex;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-@layer support {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-
-  body {
-    min-block-size: 300%;
-    font-family: system-ui, sans-serif;
-  }
-  
-  [data-icon] {
-    --_icon:;
-    mask: var(--_icon) center / contain no-repeat;
-
-    aspect-ratio: 1;
-  }
-}
 
 
 
