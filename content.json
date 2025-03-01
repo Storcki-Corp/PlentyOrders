@@ -21,7 +21,7 @@
     "About_Us": {
       "menu": "Menu",
       "about": "À propos",
-      "download": "Téléchargement",
+      "download": "Télécharger",
       "contact": "Contact",
       "colorBlind": "Daltonien",
       "language": "Français",
@@ -32,7 +32,7 @@
         "paragraph4": "<strong>GRILLO Thomas</strong><br />Multijoueur et responsable IA"
       },
       "footer": {
-        "terms": "Termes du service",
+        "terms": "Conditions d'utilisation",
         "privacy": "Avis de confidentialité",
         "copyright": "&copy; 2025 Storcki Corp. Tous droits réservés."
       }
@@ -48,9 +48,53 @@
         "paragraph1": "Télécharger"
       },
       "footer": {
-        "terms": "Termes du service",
+        "terms": "Conditions d'utilisation",
         "privacy": "Avis de confidentialité",
         "copyright": "&copy; 2025 Storcki Corp. Tous droits réservés."
+      }
+    },
+    "Privacy-Notice": {
+      "mainContent": {
+        "paragraph1": "Avis de Confidentialité",
+        "paragraph2": "Votre confidentialité est importante pour nous. <br/> Cet avis de confidentialité explique les données personnelles que nous collectons, comment nous les utilisons et vos droits concernant vos données.",
+        "paragraph3": "Informations que Nous Collectons",
+        "paragraph4": "Nous collectons des informations afin de fournir de meilleurs services à nos utilisateurs. Cela inclut :",
+        "paragraph5": "Informations d'identification personnelle (Nom, adresse e-mail, numéro de téléphone, etc.)",
+        "paragraph6": "Données d'utilisation (pages visitées, temps passé sur le site, etc.)",
+        "paragraph7": "Comment Nous Utilisons ces Informations",
+        "paragraph8": "Nous utilisons les informations que nous collectons de différentes manières, notamment pour :",
+        "paragraph9": "Fournir, exploiter et maintenir notre site web",
+        "paragraph10": "Améliorer, personnaliser et étendre notre site web",
+        "paragraph11": "Comprendre et analyser comment vous utilisez notre site web",
+        "paragraph12": "Développer de nouveaux produits, services, fonctionnalités et améliorations",
+        "paragraph13": "Communiquer avec vous, directement ou via l’un de nos partenaires",
+        "paragraph14": "Vos Droits en Matière de Protection des Données",
+        "paragraph15": "Vous avez les droits suivants en matière de protection des données :",
+        "paragraph16": "<strong>Droit d'accès </strong> – Vous avez le droit de demander des copies de vos données personnelles.",
+        "paragraph17": "<strong>Droit de rectification </strong> – Vous avez le droit de demander la correction des informations inexactes.",
+        "paragraph18": "<strong>Droit à l'effacement </strong> – Vous pouvez demander la suppression de vos données personnelles sous certaines conditions.",
+        "paragraph19": "<strong>Droit de limiter le traitement </strong> – Vous pouvez demander la limitation du traitement de vos données sous certaines conditions.",
+        "paragraph20": "<strong>Droit d’opposition au traitement </strong> – Vous pouvez vous opposer au traitement de vos données sous certaines conditions.",
+        "paragraph21": "<strong>Droit à la portabilité des données </strong> – Vous pouvez demander le transfert de vos données à une autre organisation ou à vous-même sous certaines conditions.",
+        "paragraph22": "Contactez-nous",
+        "paragraph23": "Si vous avez des questions concernant cet avis de confidentialité, les données que nous détenons sur vous, ou si vous souhaitez exercer vos droits en matière de protection des données, n’hésitez pas à nous contacter.",
+        "paragraph24": "Envoyez-nous un e-mail à : luc.bevilacqua@epita.fr",
+        "paragraph25": "Retour à la page d'accueil"
+      }
+    },
+    "terms-of-service": {
+      "mainContent": {
+        "paragraph1": "Conditions d'utilisation",
+        "paragraph2": "Bienvenue sur notre site web. En accédant ou en utilisant notre site, vous acceptez de vous conformer et d'être lié par les conditions générales d'utilisation suivantes, qui, avec notre politique de confidentialité, régissent notre relation avec vous en ce qui concerne ce site web.",
+        "paragraph3": "Utilisation du site web",
+        "paragraph4": "Le contenu des pages de ce site web est uniquement destiné à votre information générale et à votre usage. Il est sujet à des modifications sans préavis.",
+        "paragraph5": "Propriété intellectuelle",
+        "paragraph6": "Ce site web contient du matériel qui nous appartient ou qui est sous licence. Ce matériel inclut, mais sans s'y limiter, le design, la mise en page, l'apparence, et les graphismes. La reproduction est interdite.",
+        "paragraph7": "Limitation de responsabilité",
+        "paragraph8": "Votre utilisation de toute information ou matériel sur ce site web est entièrement à vos risques et périls, pour lesquels nous ne serons pas responsables. Il vous incombe de vous assurer que les produits, services ou informations disponibles sur ce site répondent à vos besoins spécifiques.",
+        "paragraph9": "Loi applicable",
+        "paragraph10": "Votre utilisation de ce site web et tout différend découlant de cette utilisation sont soumis aux lois de la France.",
+        "paragraph11": "Retour à la page d'accueil"
       }
     }
   },
@@ -106,6 +150,50 @@
         "terms": "Terms of Service",
         "privacy": "Privacy Notice",
         "copyright": "&copy; 2025 Storcki Corp. All rights reserved."
+      }
+    },
+    "Privacy-Notice": {
+      "mainContent": {
+        "paragraph1": "Privacy Notice",
+        "paragraph2": "Your privacy is important to us. <br/> This privacy notice explains the personal data we collect, how we use it, and your rights regarding your data.",
+        "paragraph3": "Information We Collect",
+        "paragraph4": "We collect information to provide better services to our users. This includes:",
+        "paragraph5": "Personal identification information (Name, email address, phone number, etc.)",
+        "paragraph6": "Usage data (pages visited, time spent on the site, etc.)",
+        "paragraph7": "How We Use this Information",
+        "paragraph8": "We use the information we collect in various ways, including to:",
+        "paragraph9": "Provide, operate, and maintain our website",
+        "paragraph10": "Improve, personalize, and expand our website",
+        "paragraph11": "Understand and analyze how you use our website",
+        "paragraph12": "Develop new products, services, features, and enhancements",
+        "paragraph13": "Communicate with you, directly or through one of our partners",
+        "paragraph14": "Your Data Protection Rights",
+        "paragraph15": "You have the following data protection rights:",
+        "paragraph16": "<strong>Access right</strong> – You have the right to request copies of your personal data.",
+        "paragraph17": "<strong>Rectification right</strong> – You have the right to request the correction of inaccurate information.",
+        "paragraph18": "<strong>Erasure right</strong> – You can request the deletion of your personal data under certain conditions.",
+        "paragraph19": "<strong>Processing limitation right</strong> – You can request the limitation of the processing of your data under certain conditions.",
+        "paragraph20": "<strong>Opposition right to processing</strong> – You can object to the processing of your data under certain conditions.",
+        "paragraph21": "<strong>Data portability right</strong> – You can request the transfer of your data to another organization or to yourself under certain conditions.",
+        "paragraph22": "Contact Us",
+        "paragraph23": "If you have any questions about this privacy notice, the data we hold about you, or if you would like to exercise your data protection rights, please do not hesitate to contact us.",
+        "paragraph24": "Send us an email at: luc.bevilacqua@epita.fr",
+        "paragraph25": "Back to home page"
+      }
+    },
+    "terms-of-service": {
+      "mainContent": {
+        "paragraph1": "Terms of Service",
+        "paragraph2": "Welcome to our website. By accessing or using our site, you agree to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern our relationship with you in relation to this website.",
+        "paragraph3": "Use of the Website",
+        "paragraph4": "The content of the pages of this website is for your general information and use only. It is subject to change without notice.",
+        "paragraph5": "Intellectual Property",
+        "paragraph6": "This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, and graphics. Reproduction is prohibited.",
+        "paragraph7": "Limitation of Liability",
+        "paragraph8": "Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services, or information available through this website meet your specific requirements.",
+        "paragraph9": "Governing Law",
+        "paragraph10": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of France.",
+        "paragraph11": "Back to the home page"
       }
     }
   }
