@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0 5%;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  background-color: tan;
+}
+
+h1,
+h2 {
+  color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+ul {
+  margin: 10px 0;
+  padding: 0 40px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Affect all <a> elements within the footer */
+footer a {
+  text-decoration: none; /* Removes underline */
+  color: blue; /* Sets text color */
+  font-size: 2em; /* Changes font size */
+}
+
+/* Add hover effect for all <a> elements within the footer */
+footer a:hover {
+  color: rgba(255, 0, 0, 0.603); /* Changes color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7vh;
+  padding-bottom: 2vh;
+}

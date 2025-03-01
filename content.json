@@ -1,0 +1,112 @@
+{
+  "fr": {
+    "Home": {
+      "menu": "Menu",
+      "about": "À propos",
+      "download": "Téléchargement",
+      "contact": "Contact",
+      "colorBlind": "Daltonien",
+      "language": "Français",
+      "mainContent": {
+        "paragraph1": "Storcki Corp est un jeune studio de développement de jeux vidéo, né de la rencontre de ses cinq membres à l’école d’ingénierie informatique EPITA à Strasbourg. Bien que les membres de Storcki Corp proviennent d’horizons divers, c’est désormais la ville de Strasbourg, chef-lieu du Grand Est, qui les relie.",
+        "paragraph2": "C’est ainsi que le symbole de l’Alsace, la cigogne, trouve naturellement sa place dans le logo du studio. Dans le folklore, les cigognes sont associées à la livraison et à la mobilité.",
+        "paragraph3": "Storcki Corp cultive un équilibre entre originalité, précision technique et une dose d’humour. Les valeurs communes, telles que l’entraide et l’inclusivité, façonnent l’entreprise de l’intérieur."
+      },
+      "footer": {
+        "terms": "Termes du service",
+        "privacy": "Avis de confidentialité",
+        "copyright": "&copy; 2025 Storcki Corp. Tous droits réservés."
+      }
+    },
+    "About_Us": {
+      "menu": "Menu",
+      "about": "À propos",
+      "download": "Téléchargement",
+      "contact": "Contact",
+      "colorBlind": "Daltonien",
+      "language": "Français",
+      "mainContent": {
+        "paragraph1": "<strong>BEFROT Hugo</strong><br />Chef de groupe et concepteur niveaux",
+        "paragraph2": "<strong>BEVILLAQUA Luc</strong><br />Responsable Marketing et Gameplay",
+        "paragraph3": "<strong>CHABOISSEAU Raphaël</strong><br />Développeur web et directeurartistique",
+        "paragraph4": "<strong>GRILLO Thomas</strong><br />Multijoueur et responsable IA"
+      },
+      "footer": {
+        "terms": "Termes du service",
+        "privacy": "Avis de confidentialité",
+        "copyright": "&copy; 2025 Storcki Corp. Tous droits réservés."
+      }
+    },
+    "Download": {
+      "menu": "Menu",
+      "about": "À propos",
+      "download": "Téléchargement",
+      "contact": "Contact",
+      "colorBlind": "Daltonien",
+      "language": "Français",
+      "mainContent": {
+        "paragraph1": "Télécharger"
+      },
+      "footer": {
+        "terms": "Termes du service",
+        "privacy": "Avis de confidentialité",
+        "copyright": "&copy; 2025 Storcki Corp. Tous droits réservés."
+      }
+    }
+  },
+  "en": {
+    "Home": {
+      "menu": "Home",
+      "about": "About us",
+      "download": "Download",
+      "contact": "Contact",
+      "colorBlind": "Blind mode",
+      "language": "English",
+      "mainContent": {
+        "paragraph1": "Storcki Corp is a young video game development studio, born from the meeting of its five members at the EPITA School of Computer Engineering in Strasbourg. Although its members come from diverse backgrounds, the city of Strasbourg, the capital of the Grand Est, now connects them.",
+        "paragraph2": "Thus, the symbol of Alsace—the stork—naturally finds its place in the studio's logo. In folklore, storks are associated with delivery and mobility.",
+        "paragraph3": "Storcki Corp maintains a balance between originality, technical precision, and a touch of humor. Shared values like mutual support and inclusivity shape the company from within."
+      },
+      "footer": {
+        "terms": "Terms of Service",
+        "privacy": "Privacy Notice",
+        "copyright": "&copy; 2025 Storcki Corp. All rights reserved."
+      }
+    },
+    "About_Us": {
+      "menu": "Home",
+      "about": "About us",
+      "download": "Download",
+      "contact": "Contact",
+      "colorBlind": "Blind mode",
+      "language": "English",
+      "mainContent": {
+        "paragraph1": "<strong>BEFROT Hugo</strong><br />Project manager and Level designer",
+        "paragraph2": "<strong>BEVILLAQUA Luc</strong><br />Marketing manager and Gameplay",
+        "paragraph3": "<strong>CHABOISSEAU Raphaël</strong><br />Web site and Head of Art",
+        "paragraph4": "<strong>GRILLO Thomas</strong><br />MultiPlayer and IA department"
+      },
+      "footer": {
+        "terms": "Terms of Service",
+        "privacy": "Privacy Notice",
+        "copyright": "&copy; 2025 Storcki Corp. All rights reserved."
+      }
+    },
+    "Download": {
+      "menu": "Home",
+      "about": "About us",
+      "download": "Download",
+      "contact": "Contact",
+      "colorBlind": "Blind mode",
+      "language": "English",
+      "mainContent": {
+        "paragraph1": "Download"
+      },
+      "footer": {
+        "terms": "Terms of Service",
+        "privacy": "Privacy Notice",
+        "copyright": "&copy; 2025 Storcki Corp. All rights reserved."
+      }
+    }
+  }
+}
