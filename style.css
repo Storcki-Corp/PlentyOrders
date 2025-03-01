@@ -329,13 +329,14 @@ footer a:hover {
 /* contient le role de chacun */
 .box-workers {
   text-align: center;
-  background-color: dimgray;
+  background-color: #692a2a;
   padding: 1%;
   width: 100%;
   height: auto;
   gap: 20px;
   border-radius: 10px;
   border: #000000 solid 1px;
+  backdrop-filter: blur(10px);
 
 }
 
@@ -343,7 +344,7 @@ footer a:hover {
 
 .box-workers2 {
   display: flex;
-  background-color: dimgray;
+  background-color: #692a2a;
   padding: 1%;
   width: 100%;
   height: auto;
