@@ -70,7 +70,17 @@
       "colorBlind": "Daltonien",
       "language": "Français",
       "mainContent": {
-        "paragraph1": "Télécharger"
+        "paragraph": "Télécharger",
+        "paragraph1": "Documents",
+        "paragraph2": "Le cahier des charges du projet ainsi que les différents rapports de soutenance sont disponibles ci-dessous.",
+        "paragraph3": "Cahier des charges n°1",
+        "paragraph4": "Premier cahier des charges rendu en Octobre 2024. <br/> Il comprend l'organisation et les premières idées du projet.",
+        "paragraph5": "Rapport de soutenance n°1",
+        "paragraph6": "Premier rapport de soutenance rendu en Janvier 2025. <br/> Il fait la rétrospection des éléments mis en place depuis le premier cahier des charges.",
+        "paragraph7": "Rapport de soutenance n°2",
+        "paragraph8": "Deuxieme rapport de soutenance rendu en Mars 2025. <br/> Blah blah blah",
+        "paragraph9": "Executable simplifié du jeu",
+        "paragraph10": "Blah blah blah"
       },
       "footer": {
         "terms": "Conditions d'utilisation",
@@ -194,8 +204,19 @@
       "colorBlind": "Blind mode",
       "language": "English",
       "mainContent": {
-        "paragraph1": "Download"
+        "paragraph": "Download",
+        "paragraph1": "Documents",
+        "paragraph2": "The project specification document and the various presentation reports are available below.",
+        "paragraph3": "Specification Document No. 1",
+        "paragraph4": "First specification document submitted in October 2024. <br/> It includes the organization and initial ideas of the project.",
+        "paragraph5": "Presentation Report No. 1",
+        "paragraph6": "First presentation report submitted in January 2025. <br/> It provides a retrospective of the elements implemented since the first specification document.",
+        "paragraph7": "Presentation Report No. 2",
+        "paragraph8": "Second presentation report submitted in March 2025. <br/> Blah blah blah",
+        "paragraph9": "Simplified Game Executable",
+        "paragraph10": "Blah blah blah"
       },
+
       "footer": {
         "terms": "Terms of Service",
         "privacy": "Privacy Notice",

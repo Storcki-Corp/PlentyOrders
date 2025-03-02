@@ -127,11 +127,7 @@ li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  padding: 0% 20% 40px 20%;
+  padding: 30px 20% 20px 20%;
 }
 
 /* Centre les textes concernant notre entreprise*/
@@ -413,4 +409,48 @@ input[type="checkbox"].cool-checkbox {
 .cool-checkbox:checked + .custom-label {
   background-color: #af8316;
   color: white;
+}
+
+.Start-Download {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+.DownloadImg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.8s ease;
+  padding-bottom: 20px;
+}
+
+.DownloadImg:hover {
+  animation: zoomInOut 5s infinite;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.DownloadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  width: 30%;
+}
+
+.DownloadBox2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10% 100px 10%;
 }

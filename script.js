@@ -1,3 +1,8 @@
+function ToDownload() {
+  window.location.href = "/PlentyOrders/Download/example.txt";
+  console.log("Téléchargement");
+}
+
 // Helper functions for cookies
 function setCookie(name, value, days) {
   const date = new Date();

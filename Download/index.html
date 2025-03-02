@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="icon" class="logo" href="../images/new_logo.png" />
+    <script defer src="../script.js"></script>
   </head>
   <body data-page="Download">
     <header class="header-container">
@@ -19,9 +20,9 @@
         </a>
         <ul>
           <li><a href="../" id="Accueil" class="link">Accueil</a></li>
-          <li><a href="#" class="act" id="About">À propos</a></li>
+          <li><a href="../About_Us/" class="link" id="About">À propos</a></li>
           <li>
-            <a href="../Download/" class="link" id="Download">Téléchargement</a>
+            <a href="#" class="act" id="Download">Téléchargement</a>
           </li>
           <li>
             <a
@@ -46,15 +47,56 @@
       </ul>
     </header>
 
-    <div class="container" id="main-content">
-      <div class="box-center">
+    <div id="main-content" ">
+      <div class="Start-Download">
         <img src="../images/Title.png" alt="" id="floatingImage" />
+        <div class="button-effect">
+          <button class="effect effect-4" onclick="ToDownload()">
+            <p class="translatable">Télécharger</p>
+          </button>
+        </div>
       </div>
-      <div class="button-effect">
-        <button class="effect effect-4" onclick="ToDownload()">
-          <p class="translatable">Télécharger</p>
-        </button>
+
+      <div class="trait"></div>
+
+      <div class="Start-Download">
+        <h1 style="color: #8a670e; font-size: 3em" class="translatable">Documents</h1>
+        <p class="translatable" style="font-size: 1.3em;">Le cahier des charges du projet ainsi que les différents rapports de soutenance sont disponibles ci-dessous.</p>
       </div>
+      <div class="DownloadBox2">
+
+        <div class="DownloadBox">
+          <a href="./Soutenances/Cahier_des_Charges.pdf" target="_blank"><img class="DownloadImg" src="../images/img cahier des charges 1.png"></a>
+          <div >
+              <h4 style="color: #8a670e; font-size: 1.5em" class="translatable">Cahier des charges n°1</h4>
+              <p class="translatable">Premier cahier des charges rendu en Octobre 2024. <br> Il comprend l'organisation et les premières idées du projet.</p>
+          </div>
+        </div>
+
+        <div class="DownloadBox">
+          <a href="./Soutenances/Rapport_de_soutenance_1.pdf" target="_blank"><img class="DownloadImg" src="../images/img cahier des charges 1.png"></a>
+          <div >
+              <h4 style="color: #8a670e; font-size: 1.5em" class="translatable">Rapport de soutenance n°1</h4>
+              <p class="translatable">Premier rapport de soutenance rendu en Janvier 2025. <br> Il fait la rétrospection des éléments mis en place depuis le premier cahier des charges. .</p>
+          </div>
+        </div>
+
+        <div class="DownloadBox">
+          <a href="./Soutenances/Rapport_de_soutenance_1.pdf" target="_blank"><img class="DownloadImg" src="../images/img cahier des charges 1.png"></a>
+          <div >
+              <h4 style="color: #8a670e; font-size: 1.5em" class="translatable">Rapport de soutenance n°2</h4>
+              <p class="translatable">Premier rapport de soutenance rendu en Janvier 2025. <br> Il fait la rétrospection des éléments mis en place depuis le premier cahier des charges. .</p>
+          </div>
+        </div>
+        <div class="DownloadBox">
+          <a href="./Soutenances/Rapport_de_soutenance_1.pdf" target="_blank"><img class="DownloadImg" src="../images/img cahier des charges 1.png"></a>
+          <div >
+              <h4 style="color: #8a670e; font-size: 1.5em" class="translatable">Executable simplifié du jeu</h4>
+              <p class="translatable">Oui oui baguet</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <footer>
@@ -70,6 +112,5 @@
         <p>&copy; 2025 Storcki Corp. All rights reserved.</p>
       </div>
     </footer>
-    <script src="../script.js"></script>
   </body>
 </html>
