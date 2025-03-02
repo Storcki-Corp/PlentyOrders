@@ -10,45 +10,42 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="icon" class="logo" href="images/new_logo.png" />
+    <script defer src="script.js"></script>
   </head>
 
   <body data-page="Home">
-    <script defer src="script.js"></script>
-    <header class="top-wind">
-      <div class="main-bar">
-        <div class="orbit">
-          <div class="plenty">
-            <div><img class="immu" src="images/new_logo.png" /></div>
-          </div>
-        </div>
-      </div>
-      <div class="main2">
+    <header class="header-container">
+      <div class="header-container">
+        <a href="../">
+          <img src="images/new_logo.png" />
+        </a>
         <ul>
-          <li><a href="#" id="Menu" class="act">Menu</a></li>
-          <li><a href="About_Us/" id="About" class="link">À propos</a></li>
+          <li><a href="#" id="Accueil" class="act">Accueil</a></li>
+          <li><a href="About_Us/" class="link" id="About">À propos</a></li>
           <li>
-            <a href="Download/" id="Download" class="link">Télécharger</a>
+            <a href="Download/" class="link" id="Download">Téléchargement</a>
           </li>
           <li>
             <a
               href="https://www.instagram.com/storckicorp?igsh=MWUwdmNma2pkdnhkYQ=="
               class="link"
-              id="Contact"
               >Contact</a
             >
           </li>
-          <li>
-            <input type="checkbox" id="check-box" class="cool-checkbox" />
-            <label for="check-box" class="custom-label">Daltonien</label>
-          </li>
-          <li>
-            <select type="select" id="langue">
-              <option value="fr">Français</option>
-              <option value="en">Anglais</option>
-            </select>
-          </li>
         </ul>
       </div>
+      <ul>
+        <li>
+          <input type="checkbox" id="check-box" class="cool-checkbox" />
+          <label for="check-box" class="custom-label">Daltonien</label>
+        </li>
+        <li>
+          <select type="select" id="langue">
+            <option>Français</option>
+            <option>Anglais</option>
+          </select>
+        </li>
+      </ul>
     </header>
 
     <div id="main-content" class="home-txt">

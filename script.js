@@ -26,7 +26,7 @@ const currentPage = document.body.getAttribute("data-page") || "Home";
 // Define common content elements selectors
 const languageSelect = document.getElementById("langue");
 const contentElements = {
-  menu: document.getElementById("Menu"),
+  menu: document.getElementById("Accueil"),
   about: document.getElementById("About"),
   download: document.getElementById("Download"),
   contact: document.getElementById("Contact"),
