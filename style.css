@@ -13,6 +13,21 @@ body {
   font-family: system-ui, sans-serif;
   font-family: Arial, sans-serif;
   background-color: tan;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+header {
+  backdrop-filter: blur(10px);
+  padding-top: 10%;
+  background-color: rgba(0, 0, 0, 0.539);
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: block;
 }
 
 /* Avoir un barre qui reste en haut de page et un arrière plan flou*/
@@ -26,13 +41,24 @@ body {
   align-items: center;
   position: sticky;
   z-index: 10;
+
+
 }
 
+#scroll{
+  overflow: visible;
+  overflow-y: hidden;
+}
+
+
+
+
+
 .header-container img {
-  margin-top: 60px;
-  margin-right: 30px;
-  width: 130px;
-  height: auto;
+  margin-top: 25%;
+  margin-right: 1.5rem;
+  height: 6rem;
+  width: 6rem;
   object-fit: contain;
 }
 
@@ -55,7 +81,7 @@ li a {
   justify-content: space-between;
 }
 
-/* Effet de lumière sur les bouttons pour changer de page */
+/* Effet sur les bouttons pour changer de page */
 .link {
   color: #090909;
   padding: 0.7em 1.7em;
@@ -75,7 +101,7 @@ li a {
   box-shadow: 4px 4px 12px #c7a658, -4px -4px 12px #684f13;
 }
 
-/* Effet de lumière sur le boutton de la page actuelle */
+/* Effet différent sur le boutton de la page actuelle */
 .act {
   padding: 0.7em 1.7em;
   font-size: 18px;
@@ -105,19 +131,19 @@ li a {
 /* Animation pour déplacer l'image de haut en bas */
 @keyframes moveUpDown {
   0% {
-    transform: translateY(0); /* Position de départ (haut) */
+    transform: translateY(0); 
   }
   30% {
-    transform: translateY(2vh); /* Position au sommet */
+    transform: translateY(2vh);
   }
   50% {
-    transform: translateY(1vh); /* Position au bas */
+    transform: translateY(1vh); 
   }
   70% {
-    transform: translateY(2vh); /* Position au sommet */
+    transform: translateY(2vh); 
   }
   100% {
-    transform: translateY(0); /* Retour au haut */
+    transform: translateY(0); 
   }
 }
 
@@ -227,6 +253,20 @@ li a {
   text-indent: 0;
 }
 
+.top {
+  min-height: 88dvh ;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+
+}
+
+.jsp{
+  min-h-:100dvh;
+  grid :grid-rows-[auto_1fr_auto];
+}
 .footer-content {
   border-top: #000000 solid 1px;
   background-color: rgba(255, 255, 255, 0.718);
@@ -251,43 +291,6 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* permet que les images restent en haut de l'écran */
-.sticky-container {
-  position: fixed;
-  inset: 0;
-}
-
-/* fait tourner sur place la div qui contient l'image du burger */
-@keyframes burger-spin {
-  to {
-    rotate: 3turn;
-  }
-}
-
-/* détail sur l'image et l'animation du burger qui tourne */
-.burg {
-  float: top;
-  position: absolute;
-  top: 27%;
-  left: 80%;
-  animation: burger-spin linear both; /* utilise les keyframes du burger pour le faire tourner */
-  animation-timeline: scroll(
-
-  ); /* effectue l'animation quand on baisse/monte la page */
-  width: 30%;
-  height: 30%;
-}
-
-.burg > * {
-  /* affecte les enfant de la class burg */
-  translate: 200%; /* correspond à la position du burger dans la div .burg */
-}
-
-.rotate {
-  height: 100%;
-  width: 100%;
-}
-
 .trait {
   width: 95%;
   height: 1px;
@@ -298,22 +301,31 @@ footer a:hover {
 .personnel {
   margin: 20px;
   display: flex;
-  justify-content: center; /* Center the elements inside */
+  justify-content: center; 
   gap: 20px;
+
+}
+
+
+
+
+.box p {
+  font-size: 1.1rem;
 }
 
 .personnel-informations {
   width: 30%;
-  display: flex;
-  flex-direction: column; /* Ensure it's a column layout */
+
+
 }
 
 .personnel img {
-  height: 600px;
-  width: auto;
+  height: 40%;
+  width: 40%;
   border-radius: 10px;
   transition: transform 1.5s, box-shadow 0.7s;
   z-index: 0;
+
 }
 
 .personnel img:hover {
@@ -356,8 +368,9 @@ footer a:hover {
 .personnel-box p {
   margin-top: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 2rem;
   color: #000;
+
 }
 select,
 option {
@@ -365,19 +378,19 @@ option {
   background-color: #fff;
 }
 
-/* Style for the select dropdown container */
+/* Style de la drop down liste des langues */
 select {
-  appearance: none; /* Remove default arrow */
-  -webkit-appearance: none; /* Remove default arrow for Safari */
-  -moz-appearance: none; /* Remove default arrow for Firefox */
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
   color: #000; /* Text color */
-  font-size: 16px; /* Match your button font size */
-  padding: 0.7em; /* Match your button padding */
-  border-radius: 0.5em; /* Match your button border radius */
-  cursor: pointer; /* Show pointer cursor */
-  transition: all 0.3s ease; /* Smooth transition */
-  width: 120px; /* Set a fixed width */
-  text-align: center; /* Center the text */
+  font-size: 16px; 
+  padding: 0.7em; 
+  border-radius: 0.5em; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  width: 120px; 
+  text-align: center; 
 }
 
 /* Colorblind mode */
@@ -385,9 +398,8 @@ select {
   filter: grayscale(0%);
 }
 
-/* Custom Checkbox Style */
+/* Style de la checkbox colorblindd*/
 input[type="checkbox"].cool-checkbox {
-  /* Hide the default checkbox visually but keep it functional */
   position: absolute;
   opacity: 0;
   width: 0;
@@ -443,7 +455,7 @@ input[type="checkbox"].cool-checkbox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: flex-start; 
   width: 30%;
 }
 
