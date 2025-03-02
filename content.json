@@ -8,9 +8,15 @@
       "colorBlind": "Daltonien",
       "language": "Français",
       "mainContent": {
-        "paragraph1": "Storcki Corp est un jeune studio de développement de jeux vidéo, né de la rencontre de ses cinq membres à l’école d’ingénierie informatique EPITA à Strasbourg. Bien que les membres de Storcki Corp proviennent d’horizons divers, c’est désormais la ville de Strasbourg, chef-lieu du Grand Est, qui les relie.",
-        "paragraph2": "C’est ainsi que le symbole de l’Alsace, la cigogne, trouve naturellement sa place dans le logo du studio. Dans le folklore, les cigognes sont associées à la livraison et à la mobilité.",
-        "paragraph3": "Storcki Corp cultive un équilibre entre originalité, précision technique et une dose d’humour. Les valeurs communes, telles que l’entraide et l’inclusivité, façonnent l’entreprise de l’intérieur."
+        "paragraph1": "Storcki Corp est bien plus qu’un simple studio de développement de jeux vidéo : <br/><br/> c’est avant tout une aventure humaine née de la rencontre de cinq passionnés au sein de l’école d’ingénierie informatique EPITA à Strasbourg. <br/><br/>Chacun des membres du studio apporte avec lui une histoire, des expériences et des compétences uniques, mais tous partagent un même objectif : <em>créer des jeux innovants et marquants.</em> <br/><br/>Ce projet commun s’est imposé comme une évidence, unissant leurs talents autour d’une vision ambitieuse et d’une passion dévorante pour le jeu vidéo. Et c’est aujourd’hui à Strasbourg, cette ville au carrefour de l’Europe, que Storcki Corp puise son énergie et forge son identité.",
+        "paragraph2": "L’identité visuelle du studio s’est construite naturellement autour d’un symbole fort et évocateur : la cigogne. <br/><br/>Emblème incontournable de l’Alsace, elle représente bien plus qu’un simple clin d'œil régional. <br/>Dans l’imaginaire collectif, la cigogne est un messager, un voyageur infatigable capable de parcourir de longues distances avec une aisance remarquable. <br/><br/>À l’image de cet oiseau, Storcki Corp aspire à concevoir des jeux qui transportent les joueurs dans des univers captivants, où l’expérience de jeu est fluide, immersive et toujours en mouvement. <br/><br/>Le choix de ce symbole traduit aussi l’état d’esprit du studio : une équipe qui ne cesse d’évoluer, d’apprendre et de repousser ses propres limites, avec la volonté constante de livrer des jeux de qualité.",
+        "paragraph3": "Au cœur de Storcki Corp, on retrouve un équilibre subtil entre originalité, exigence technique et une touche d’humour qui vient pimenter chacune de leurs créations. <br/><br/>Le studio ne se contente pas de développer des jeux :<br/> il cherche à offrir des expériences singulières, façonnées par un soin minutieux du détail et une approche créative qui ose sortir des sentiers battus. <br/><br/>Loin des standards formatés, chaque projet est une occasion d’explorer de nouvelles idées, d’expérimenter des concepts audacieux et d’insuffler une âme unique aux jeux qui prennent vie sous leurs mains expertes.",
+        "paragraph4": "Mais plus qu’un simple collectif de développeurs, Storcki Corp est avant tout une famille, où les valeurs humaines sont placées au premier plan.<br/><br/> L’entraide et l’inclusivité ne sont pas de simples principes affichés, mais des piliers concrets qui structurent le fonctionnement de l’équipe au quotidien.<br/><br/> Chaque membre y trouve sa place, libre d’apporter ses idées, d’exprimer sa créativité et de contribuer activement à l’évolution du studio. Cette synergie entre talents complémentaires et visions partagées est la clé qui permet à Storcki Corp de grandir et d’évoluer vers de nouveaux horizons.",
+        "paragraph5": "Merci pour votre soutient !",
+        "paragraph6": "",
+        "paragraph7": "",
+        "paragraph8": "",
+        "paragraph9": ""
       },
       "footer": {
         "terms": "Termes du service",
@@ -74,13 +80,15 @@
         "paragraph1": "Documents",
         "paragraph2": "Le cahier des charges du projet ainsi que les différents rapports de soutenance sont disponibles ci-dessous.",
         "paragraph3": "Cahier des charges n°1",
-        "paragraph4": "Premier cahier des charges rendu en Octobre 2024. <br/> Il comprend l'organisation et les premières idées du projet.",
+        "paragraph4": "Premier cahier des charges rendu en Octobre 2024. <br/>Il comprend l'organisation et les premières idées du projet.",
         "paragraph5": "Rapport de soutenance n°1",
-        "paragraph6": "Premier rapport de soutenance rendu en Janvier 2025. <br/> Il fait la rétrospection des éléments mis en place depuis le premier cahier des charges.",
+        "paragraph6": "Premier rapport de soutenance rendu en Janvier 2025. <br/>Il fait la rétrospection des éléments mis en place depuis le premier cahier des charges.",
         "paragraph7": "Rapport de soutenance n°2",
-        "paragraph8": "Deuxieme rapport de soutenance rendu en Mars 2025. <br/> Blah blah blah",
-        "paragraph9": "Executable simplifié du jeu",
-        "paragraph10": "Blah blah blah"
+        "paragraph8": "Deuxième rapport de soutenance rendu en mars 2025.<br/>Il analyse les progrès réalisés depuis le premier rapport et détaille les ajustements apportés au projet.",
+        "paragraph9": "Version allégée du jeu",
+        "paragraph10": "Une version simplifiée et optimisée du jeu, disponible en téléchargement.<br/>Elle permet de découvrir les mécaniques principales sans nécessiter de configuration avancée.",
+        "paragraph11": "Diagramme de Gantt du projet",
+        "paragraph12": "Un aperçu de la chronologie du projet, détaillant les étapes clés et les échéances. <br/>Il offre une vision claire de l'avancement et des tâches à venir."
       },
       "footer": {
         "terms": "Conditions d'utilisation",
@@ -212,9 +220,11 @@
         "paragraph5": "Presentation Report No. 1",
         "paragraph6": "First presentation report submitted in January 2025. <br/> It provides a retrospective of the elements implemented since the first specification document.",
         "paragraph7": "Presentation Report No. 2",
-        "paragraph8": "Second presentation report submitted in March 2025. <br/> Blah blah blah",
-        "paragraph9": "Simplified Game Executable",
-        "paragraph10": "Blah blah blah"
+        "paragraph8": "Second presentation report submitted in March 2025.<br/>It reviews the progress made since the first report and outlines the adjustments made to the project.",
+        "paragraph9": "Lightweight Version of the Game",
+        "paragraph10": "A simplified and optimized version of the game, available for download. <br/> It allows players to experience the core mechanics without requiring advanced setup.",
+        "paragraph11": "Project Gantt Chart",
+        "paragraph12": "An overview of the project's timeline, detailing key milestones and deadlines. <br/> It provides a clear vision of the progress and upcoming tasks."
       },
 
       "footer": {

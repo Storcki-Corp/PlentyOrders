@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-
 }
 
 header {
@@ -28,6 +27,7 @@ header {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 10;
   display: block;
+  margin-bottom: 50px;
 }
 
 /* Avoir un barre qui reste en haut de page et un arrière plan flou*/
@@ -41,18 +41,12 @@ header {
   align-items: center;
   position: sticky;
   z-index: 10;
-
-
 }
 
-#scroll{
+#scroll {
   overflow: visible;
   overflow-y: hidden;
 }
-
-
-
-
 
 .header-container img {
   margin-top: 25%;
@@ -131,19 +125,19 @@ li a {
 /* Animation pour déplacer l'image de haut en bas */
 @keyframes moveUpDown {
   0% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   30% {
     transform: translateY(2vh);
   }
   50% {
-    transform: translateY(1vh); 
+    transform: translateY(1vh);
   }
   70% {
-    transform: translateY(2vh); 
+    transform: translateY(2vh);
   }
   100% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
 }
 
@@ -254,18 +248,17 @@ li a {
 }
 
 .top {
-  min-height: 88dvh ;
+  min-height: 88dvh;
 }
 
 footer {
   width: 100%;
   position: relative;
-
 }
 
-.jsp{
-  min-h-:100dvh;
-  grid :grid-rows-[auto_1fr_auto];
+.jsp {
+  min-height: 100dvh;
+  grid: grid-rows-[auto_1fr_auto];
 }
 .footer-content {
   border-top: #000000 solid 1px;
@@ -301,13 +294,9 @@ footer a:hover {
 .personnel {
   margin: 20px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px;
-
 }
-
-
-
 
 .box p {
   font-size: 1.1rem;
@@ -315,8 +304,6 @@ footer a:hover {
 
 .personnel-informations {
   width: 30%;
-
-
 }
 
 .personnel img {
@@ -325,7 +312,6 @@ footer a:hover {
   border-radius: 10px;
   transition: transform 1.5s, box-shadow 0.7s;
   z-index: 0;
-
 }
 
 .personnel img:hover {
@@ -370,7 +356,6 @@ footer a:hover {
   text-align: center;
   font-size: 2rem;
   color: #000;
-
 }
 select,
 option {
@@ -380,17 +365,17 @@ option {
 
 /* Style de la drop down liste des langues */
 select {
-  appearance: none; 
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   color: #000; /* Text color */
-  font-size: 16px; 
-  padding: 0.7em; 
-  border-radius: 0.5em; 
-  cursor: pointer; 
-  transition: all 0.3s ease; 
-  width: 120px; 
-  text-align: center; 
+  font-size: 16px;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 120px;
+  text-align: center;
 }
 
 /* Colorblind mode */
@@ -434,7 +419,10 @@ input[type="checkbox"].cool-checkbox {
   width: 100%;
   height: auto;
   transition: transform 0.8s ease;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.181);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 
 .DownloadImg:hover {
@@ -455,7 +443,7 @@ input[type="checkbox"].cool-checkbox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   width: 30%;
 }
 
@@ -465,4 +453,45 @@ input[type="checkbox"].cool-checkbox {
   justify-content: center;
   gap: 20px;
   padding: 0 10% 100px 10%;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 25% 0 25%;
+  text-align: center;
+}
+
+.mainpage p {
+  font-size: 1.2em;
+}
+
+.buttonHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  color: #000;
+  background: #af8316;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 30px auto; /* Ajoute un margin top et bottom de 50px */
+  text-decoration: none; /* Enleve le texte souligné */
+}
+
+.buttonHome:hover {
+  background: #c7a658;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.buttonHome:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }

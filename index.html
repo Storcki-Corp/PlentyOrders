@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" id="page">
-<div class="top">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plenty Orders</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="icon" class="logo" href="images/new_logo.png" />
-    <script defer src="script.js"></script>
-  </head>
+  <div class="top">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Plenty Orders</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+      <link rel="icon" class="logo" href="images/new_logo.png" />
+      <script defer src="script.js"></script>
+    </head>
 
-  <body data-page="Home">
-    <header class="header-container" id = "scroll">
-      <div class="header-container">
-        <a href="../">
-          <img src="images/new_logo.png" />
-        </a>
+    <body data-page="Home">
+      <header class="header-container" id="scroll">
+        <div class="header-container">
+          <a href="#">
+            <img src="images/new_logo.png" />
+          </a>
+          <ul>
+            <li><a href="#" id="Accueil" class="act">Accueil</a></li>
+            <li><a href="About_Us/" class="link" id="About">À propos</a></li>
+            <li>
+              <a href="Download/" class="link" id="Download">Téléchargement</a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/storckicorp?igsh=MWUwdmNma2pkdnhkYQ=="
+                class="link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
         <ul>
-          <li><a href="#" id="Accueil" class="act">Accueil</a></li>
-          <li><a href="About_Us/" class="link" id="About">À propos</a></li>
           <li>
-            <a href="Download/" class="link" id="Download">Téléchargement</a>
+            <input type="checkbox" id="check-box" class="cool-checkbox" />
+            <label for="check-box" class="custom-label">Daltonien</label>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/storckicorp?igsh=MWUwdmNma2pkdnhkYQ=="
-              class="link"
-              >Contact</a>
+            <select type="select" id="langue">
+              <option>Français</option>
+              <option>Anglais</option>
+            </select>
           </li>
         </ul>
-      </div>
-      <ul>
-        <li>
-          <input type="checkbox" id="check-box" class="cool-checkbox" />
-          <label for="check-box" class="custom-label">Daltonien</label>
-        </li>
-        <li>
-          <select type="select" id="langue">
-            <option>Français</option>
-            <option>Anglais</option>
-          </select>
-        </li>
-      </ul>
-    </header>
+      </header>
 
-    <div id="main-content">
-      <div class="box">
-        <div>
-          <p class="translatable">
-            Storcki Corp est un jeune studio de développement de jeux vidéo, né
-            de la rencontre de ses cinq membres à l’école d’ingénierie
-            informatique EPITA à Strasbourg. Bien que les membres de Storcki
-            Corp proviennent d’horizons divers, c’est désormais la ville de
-            Strasbourg, chef-lieu du Grand Est, qui les relie.
+      <div id="main-content">
+        <div class="mainpage">
+          <h3>Storcki Corp vous présente</h3>
+          <h1 style="color: #8a670e; font-size: 4em">Plenty Orders</h1>
+          <p style="padding: 0 10%; font-size: 1.5em; padding-bottom: 4em">
+            Un jeu de cuisine frénétique où rapidité, coordination et fun en
+            multijoueur sont la clé pour réussir chaque service !
           </p>
+
+          <p class="translatable">
+            Storcki Corp est bien plus qu’un simple studio de développement de
+            jeux vidéo : c’est avant tout une aventure humaine née de la
+            rencontre de cinq passionnés au sein de l’école d’ingénierie
+            informatique EPITA à Strasbourg. Chacun des membres du studio
+            apporte avec lui une histoire, des expériences et des compétences
+            uniques, mais tous partagent un même objectif : créer des jeux
+            innovants et marquants. Ce projet commun s’est imposé comme une
+            évidence, unissant leurs talents autour d’une vision ambitieuse et
+            d’une passion dévorante pour le jeu vidéo. Et c’est aujourd’hui à
+            Strasbourg, cette ville au carrefour de l’Europe, que Storcki Corp
+            puise son énergie et forge son identité.
+          </p>
+
+          <a href="About_Us/" class="buttonHome">Qui nous sommes</a>
+
           <br />
           <p class="translatable">
             C’est ainsi que le symbole de l’Alsace, la cigogne, trouve
@@ -66,7 +82,19 @@
             plus particulièrement la cigogne, symbolise la capacité de Storcki
             Corp à délivrer des jeux vidéo de qualité dans le monde entier.
           </p>
-          <br />
+
+          <img
+            src="images/prend ton envol.jpg"
+            alt=""
+            style="
+              width: 40%;
+              height: auto;
+              border-radius: 50px;
+              display: block;
+              margin: 0 auto;
+            "
+          />
+
           <p class="translatable">
             Storcki Corp cultive un équilibre entre originalité, précision
             technique et une dose d’humour. Les valeurs communes des membres de
@@ -74,22 +102,39 @@
             familial, façonnent l’entreprise de l’intérieur et s’expriment à
             travers leurs réalisations.
           </p>
+          <br /><br />
+          <p class="translatable">
+            Mais plus qu’un simple collectif de développeurs, Storcki Corp est
+            avant tout une famille, où les valeurs humaines sont placées au
+            premier plan.<br /><br />
+            L’entraide et l’inclusivité ne sont pas de simples principes
+            affichés, mais des piliers concrets qui structurent le
+            fonctionnement de l’équipe au quotidien.<br /><br />
+            Chaque membre y trouve sa place, libre d’apporter ses idées,
+            d’exprimer sa créativité et de contribuer activement à l’évolution
+            du studio. Cette synergie entre talents complémentaires et visions
+            partagées est la clé qui permet à Storcki Corp de grandir et
+            d’évoluer vers de nouveaux horizons.
+          </p>
+
+          <h3 style="color: #8a670e; padding-bottom: 1em; font-size: 5em">
+            Merci pour votre soutien
+          </h3>
         </div>
       </div>
-    </div>
-  </body>
+    </body>
   </div>
-    <footer>
-      <div class="footer-content">
-        <div>
-          <a href="legal/Terms-of-Service/" style="margin-right: 10px"
-            >Conditions d'utilisation</a
-          >
-          <a href="legal/Privacy-Notice/" style="margin-left: 10px"
-            >Notice de confidentialité</a
-          >
-        </div>
-        <p>&copy; 2025 Storcki Corp. All rights reserved.</p>
+  <footer>
+    <div class="footer-content">
+      <div>
+        <a href="legal/Terms-of-Service/" style="margin-right: 10px"
+          >Conditions d'utilisation</a
+        >
+        <a href="legal/Privacy-Notice/" style="margin-left: 10px"
+          >Notice de confidentialité</a
+        >
       </div>
-    </footer>
+      <p>&copy; 2025 Storcki Corp. All rights reserved.</p>
+    </div>
+  </footer>
 </html>
