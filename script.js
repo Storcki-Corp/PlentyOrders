@@ -1,5 +1,5 @@
 function ToDownload() {
-  window.location.href = "/PlentyOrders/Download/example.txt";
+  window.open("/PlentyOrders/Download/example.txt", "_blank");
   console.log("Téléchargement");
 }
 
