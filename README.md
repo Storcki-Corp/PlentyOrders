@@ -22,13 +22,12 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
 - **Git** (pour cloner le dépôt)
 - **Un navigateur web** (Google Chrome, Mozilla Firefox, Edge, etc.)
-- **Python (facultatif)** si vous souhaitez utiliser un serveur local
 
 ### ⬇️ Cloner le projet
 
 Ouvrez un terminal et exécutez la commande suivante :
 
 ```bash
-git clone https://github.com/votre-repo/storcki-site.git
-cd storcki-site
+git clone https://github.com/Storcki-Corp/PlentyOrders.git
+cd PlentyOrders
 ```
