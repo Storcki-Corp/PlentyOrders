@@ -46,7 +46,7 @@ const contentElements = {
 
 // Function to update content based on language and current page
 function updateContent(lang) {
-  fetch("/PlentyOrders/content.json")
+  fetch("/content.json")
     .then((response) => response.json())
     .then((data) => {
       if (!data[lang] || !data[lang][currentPage]) {
@@ -107,7 +107,11 @@ function updateContent(lang) {
 
 // Détermination de la langue par défaut si aucun select n'est présent
 const savedLanguage = getCookie("language");
-const defaultLanguage = savedLanguage || "fr";
+var defaultLanguage = savedLanguage || "fr";
+if (defaultLanguage !== "fr" && defaultLanguage !== "en") {
+  console.error("Langue par défaut non valide, utilisation de 'fr'");
+  defaultLanguage = "fr";
+}
 updateContent(defaultLanguage);
 
 if (languageSelect) {
