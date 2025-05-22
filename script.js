@@ -46,7 +46,7 @@ const contentElements = {
 
 // Function to update content based on language and current page
 function updateContent(lang) {
-  fetch("/content.json")
+  fetch("/PlentyOrders/content.json")
     .then((response) => response.json())
     .then((data) => {
       if (!data[lang] || !data[lang][currentPage]) {
