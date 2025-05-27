@@ -3,7 +3,6 @@ function ToDownload() {
   console.log("Téléchargement");
 }
 
-// Helper functions for cookies
 function setCookie(name, value, days) {
   const date = new Date();
   date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
@@ -25,10 +24,9 @@ function getCookie(name) {
 }
 
 console.log(document.body);
-// Detect current page from a data attribute on <body>
 const currentPage = document.body.getAttribute("data-page") || "Home";
 
-// Define common content elements selectors
+// Définition de l'élément de sélection de langue et des éléments de contenu
 const languageSelect = document.getElementById("langue");
 const contentElements = {
   menu: document.getElementById("Accueil"),
@@ -44,7 +42,7 @@ const contentElements = {
   },
 };
 
-// Function to update content based on language and current page
+// Mise à jour du contenu en fonction de la langue sélectionnée
 function updateContent(lang) {
   fetch("/PlentyOrders/content.json")
     .then((response) => response.json())

@@ -495,3 +495,20 @@ input[type="checkbox"].cool-checkbox {
   transform: translateY(0);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.DownloadTextEnd {
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+.DownloadTextEnd p {
+  font-size: 1.5em;
+  color: #000;
+  margin-top: 10px;
+}
+
+.manual-section {
+  border-radius: 16px;
+  padding: 2em;
+  margin: 2em 0;
+  margin-left: 10%;
+}
