@@ -1,5 +1,5 @@
 function ToDownload() {
-  window.open("/PlentyOrders/Download/Plenty_Orders_Installer.exe", "_blank");
+  window.open("https://github.com/Storcki-Corp/PlentyOrders/releases/download/TEST/Plenty_Orders_Installer.exe", "_blank");
   console.log("Téléchargement");
 }
 
