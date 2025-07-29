@@ -1,5 +1,5 @@
 function ToDownload() {
-  window.open("/PlentyOrders/Download/PlentyOrdersInstallation.exe", "_blank");
+  window.open("/PlentyOrders/Download/Plenty_Orders_Installer.exe", "_blank");
   console.log("Téléchargement");
 }
 
